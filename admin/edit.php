@@ -138,7 +138,7 @@ $data1 = $objStatement->fetch(PDO::FETCH_OBJ);
 
 						<tr>
 							<td>Giá</td>
-							<td><input type="number" name="gia" value='<?php echo $data1->GiaBan ?>'></td>
+							<td><input type="number" min="0" name="gia" value='<?php echo $data1->GiaBan ?>'></td>
 						</tr>
 						<tr>
 							<td>Mô tả:</td>

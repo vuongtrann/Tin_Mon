@@ -114,7 +114,7 @@ $dataMaLoai = $objStatement->fetchAll(PDO::FETCH_OBJ);
 							</tr>
 							<tr>
 								<td>Giá </td>
-								<td><input type="number" name="gia"></td>
+								<td><input type="number" min="0" name="gia"></td>
 							</tr>
 							<tr>
 								<td>Mô tả: </td>
