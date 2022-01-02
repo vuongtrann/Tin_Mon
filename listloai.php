@@ -10,7 +10,7 @@ $sql='select * FROM loaisanpham join sanpham on sanpham.MaLoai=loaisanpham.MaLoa
 $a=[$m];
 $objStatament=$objPDO->prepare($sql);
 $objStatament->execute($a);
-$data1=$objStatament->fetchALL(PDO::FETCH_OBJ);
+$data11=$objStatament->fetchALL(PDO::FETCH_OBJ);
 
 ?>
 
@@ -87,7 +87,7 @@ $data1=$objStatament->fetchALL(PDO::FETCH_OBJ);
                 
                     <?php
 					$flag=0;
-					foreach($data1 as $v)
+					foreach($data11 as $v)
 					{
 						if($flag==16)
 						{
